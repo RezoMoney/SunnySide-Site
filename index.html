@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(167, 40%, 24%);
+      }
+
+       
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+.top-page {
+background-image: url(./images/desktop/image-header.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+}
+nav li {
+  list-style-type: none;
+}
+nav img {
+  height: 30px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+}
+ nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  padding-top: 30px; 
+}
+
+.upper-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  
+} 
+
+nav a {
+  color:hsl(0, 0%, 100%);
+  font-family: 'Barlow', sans-serif;
+} 
+ nav a:hover {
+  background-color:  hsl(0, 0%, 100%);
+  color: #0f0f0f;
+  border-radius: 10px 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  padding: 10px;
+ }
+
+
+ .header {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+
+ }
+ h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+  padding-top: 5%;
+  padding-bottom: 40%;
+  letter-spacing: 8px;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+ }
+ .arrow-down {
+  position: absolute;
+  top: 48%;
+  right: 48%; 
+ }
+ .deco {
+  display: flex;
+ }
+ .deco-a, .deco-b {
+  width: 50%;
+ }
+ .egg-lolli {
+  width: 100%;
+  height: 100%;
+ }
+ div.deco-a {
+  margin: auto;
+  width: 28%;
+  padding: 10px;
+ }
+ .egglol {
+  padding: 20px 0;
+  font-size: 34px;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+ }
+ .upper-p {
+  padding-bottom: 20px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  color: hsl(232, 10%, 55%);
+  font-size: 15px;
+ }
+ .more {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  padding-top: 20px;
+  font-weight: 900;
+ }
+ .more a {
+  color: #0f0f0f;
+  text-decoration: none;
+ }
+ 
+ .first a:hover {
+  box-shadow: 0 4px 10px -1px hsl(51, 100%, 49%);
+ }
+ .second a:hover {
+  box-shadow: 0 4px 10px -1px hsl(7, 99%, 70%);
+ }
+.alpha {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  width: 100%;
+}
+
+.beta {
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+ .test {
+  text-align: center;
+  padding: 0 20%;
+  padding-top: 50%;
+ }
+ .dope {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+ }
+.green {
+  color:  hsl(167, 40%, 24%);
+}
+.blue {
+  color: hsl(198, 62%, 26%);
+}
+.dg {
+  font-family: 'Barlow', sans-serif;
+  padding-bottom: 60px;
+  line-height: 25px;
+  font-size: 19px;
+}
+.testimonials {
+  text-align: center;
+}
+.stand-out {
+  padding-top: 10%;
+  padding-bottom: 60px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: hsl(210, 4%, 67%);
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+.new {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 8%;
+}
+.rounded {
+  border-radius: 50%;
+  height: 70px;
+}
+.reviews-note {
+  padding: 0 20px;
+  padding-top: 50px;
+  font-family: 'Barlow', sans-serif;
+  color: hsl(232, 10%, 55%);
+  line-height: 40px;
+  padding-bottom: 20%;
+  font-size: 14px;
+}
+.name {
+  padding-bottom: 20px;
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+}
+.position {
+  color: hsl(210, 4%, 67%);
+  font-size: 15px;
+  font-family: 'Barlow', sans-serif;
+  padding-bottom: 40%;
+}
+ .footer-area {
+  display: flex;
+ }
+.footer > img{
+  height: 100%;
+  width: 50%;
+} 
+.footer {
+ font-size: 0;
+} 
+.bar-bottom {
+  background-color: hsl(168, 38%, 67%);
+  text-align: center;
+}
+.Sunnyside {
+  padding-top: 40px;
+  color: hsl(167, 40%, 24%);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+
+}
+.hero {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-bottom: 50px;
+
+}
+.hero li a {
+  padding: 0 20px;
+  color:  hsl(168, 34%, 41%);
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+.Contact {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0 10px;
+}
+.Contact li {
+   padding: 0 10px;
+   padding-bottom: 50px;
+}
+.Contact li img {
+  height: 15px;
+}
+
+/* media query */
+
+@media only screen and (max-width:1115px) {
+  .arrow-down {
+  top: 38%;
+ }
+ .jennie {
+  letter-spacing: 1px;
+ }
+}
+@media only screen and (max-width:1025px) {
+  .arrow-down {
+  top: 18%;
+  height: 12%;
+ }
+ 
+.dope {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+ .dg {
+  font-size: 15px;
+  padding-bottom: 10px;
+ }
+ .left{
+  padding-bottom: 25px;
+ }
+}
+
+
+ @media only screen and (max-width:821px) {
+  .arrow-down {
+  top: 34%;
+ }
+ h1 {
+  font-size: 2.5rem;
+  padding-bottom: 50%;
+ }
+ nav a {
+  font-size: 15px;
+  
+ }
+ .reviews-note {
+  font-size: 13px;
+  padding: 0 12px;
+  padding-top: 50px;
+  padding-bottom: 20%;
+  line-height: 30px;
+ }
+ .egglol {
+  font-size: 32px;
+}
+ .more {
+  padding-bottom: 30px;
+ }
+
+}
+@media only screen and (max-width:769px) {
+  .arrow-down {
+  top: 27%;
+ }
+ .egglol {
+  font-size: 28px;
+  padding-top: 35px;
+ }
+ .more {
+  padding-bottom: 30px;
+ }
+
+ .dope {
+  margin-top: 80px;
+ }
+ .reviews-note {
+  padding: 0 10px;
+  padding-top: 50px;
+  padding-bottom: 20%;
+ }
+  .egglol {
+  font-size: 30px;
+}
+
+}
+@media only screen and (max-width:750px){
+  .drop-down {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background:   url(images/icon-hamburger.svg) no-repeat 98% center;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 24px;
+  }
+  .upper-ul {
+    position: absolute;
+    right: 120%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-sizing: border-box;
+    /* padding-left: 90%; */
+  } 
+  .upper-ul li {
+    margin: 10px 0;
+  }
+  .upper-ul.open {
+    left: 0;
+  }
+  .header {
+    padding-top: 15%;
+  }
+   nav a {
+    color: hsl(167, 40%, 24%);
+   }
+
+  nav a:hover {
+  color: aqua;
+  font-size: 12px;
+  background-color: transparent;
+  }
+  .arrow-down {
+  top: 63%;
+  height: 15%;
+  }
+  h1 {
+    font-size: 3rem;
+    padding-bottom: 90%;
+    width: 100%;
+  }
+.egglol { 
+  font-size: 30px;
+
+}
+.reviews-note {
+  font-size: 12px;
+}
+
+}
+@media only screen and (max-width:540px) {
+h1 {
+  padding-top: 20%;
+  padding-bottom: 150%;
+}
+.arrow-down {
+    top: 70%;
+    height: 20%;
+}
+}
+
+@media only screen and (max-width:480px) {
+
+    h1 {
+      padding-bottom: 140%;
+      font-size: 3rem;
+    }
+    .arrow-down {
+  top: 74%;
+  height: 18%;
+  }
+  .alberto{
+    flex-direction: column-reverse;
+  }
+  .carlos {
+    flex-direction: column;
+   
+  }
+  .egg-lolli {
+    width: 200%;
+    height: 386px;
+  }
+  div.deco-a {
+    margin: auto;
+    padding: 0 40px 0 40px;
+    text-align: center;
+    width: fit-content;
+}
+  .egglol {
+    font-size: 40px;
+    padding-bottom: 3rem;
+    padding-top: 60px
+  }
+  .upper-p {
+    padding-bottom: 30px;
+    font-size: 25px;
+    letter-spacing: 2.5px;
+}
+  .more a {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+  .more {
+    padding-bottom: 60px;
+}
+  .block {
+    display: block;
+  } 
+ .dope {
+    font-size: 35px;
+    padding-bottom: 5%;
+}
+  .test {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+ .dg  {
+  padding-bottom: 12%;
+  padding-top: 5%;
+  font-size: 20px;
+ }
+ .new {
+  flex-direction: column;
+ }
+ .stand-out {
+    padding-top: 20%;
+}
+.rounded {
+    height: 100px;
+}
+.reviews-note {
+    padding-top: 30px;
+    font-size: 20px;
+    padding-bottom: 10%;
+}
+.position {
+    padding-bottom: 20%;
+}
+.name {
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.footer-area {
+     display: block;
+}
+.Sunnyside {
+    font-size: 350%;
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+.hero li a {
+    padding: 0 20px;
+    font-size: 22px;
+}
+.hero {
+    padding-bottom: 90px;
+}
+.Contact {
+  padding-bottom: 100px;
+}
+.Contact li img {
+    height: 34px;
+    padding: 0 15px;
+}
+}
+
+@media only screen and (max-width:430px) {
+  .arrow-down {
+    top: 50%;
+}
+}
+
+@media only screen and (max-width:415px) {
+  .arrow-down {
+    top: 50%;
+}
+}
+
+@media only screen and (max-width:376px) {
+  h1 {
+    padding-top: 28%;
+    padding-bottom: 150%;
+}
+  .arrow-down {
+    top: 65%;
+    height: 25%;
+    right: 42%;
+}
+  .hero li a {
+    padding: 0 2px;
+}
+}
+@media only screen and (max-width:280px) {
+  h1 {
+    font-size: 2rem;
+    padding-top: 35%;
+}
+.Contact li img {
+    padding: 0 10px;
+    height: 25px;
+}
+.Contact li {
+    padding: 0;
+}
+div.deco-a {
+  padding: 0;
+}
+.hero li a {
+    font-size: 18px;
+    padding: 0 6px;
+}
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-page">
+        <nav>
+          <img class="pic logo" src="./images/logo.svg" alt="logo" />
+          <span>
+         <ul class="upper-ul">
+            <li  class="navs "><a href="#">About</a></li>
+            <li class="navs"><a href="#">Services</a></li></li>
+            <li class="navs"><a href="#">Projects</a></li></li>
+            <li class="navs chosen"><a class="pic" href="#">Contact</a></li></li>
+          </ul>
+          <span class="drop-down"></span>
+          </span>
+        </nav>
+        <div class="header">
+          <h1>We are creatives</h1>
+          <img class="arrow-down" src="./images/icon-arrow-down.svg" alt="arrow" />
+        </div>
+      </div>
+
+
+      <div class="deco alberto">
+        <div  class="deco-a"> 
+         <h2 class="egglol">Transform your brand</h2>
+          <p class="upper-p">
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+         </p>
+          <h2 class="more first"><a href="#">Learn more</a></h2>
+        </div>
+        <div class="deco-b"><img class="egg-lolli" src="./images/desktop/image-transform.jpg" alt="egg" /></div>
+      </div>
+
+      <div class=" deco carlos">
+        <div class="deco-b carlos-b"><img class="egg-lolli" src="./images/desktop/image-stand-out.jpg" alt="stand-out" /></div>
+        <div class="deco-a carlos-a">
+         <h2 class="egglol">Stand out to the right audience</h2>
+         <p class="upper-p">
+            Using a collaborative formula of designers, researchers,
+           photographers, videographers, and copywriters, we’ll build and extend
+           your brand in digital places.
+         </p>
+         <h2  class="more second"><a href="#">Learn more</a></h2>
+        </div>
+      </div>
+
+
+      <div class="deco block">
+          <div class="alpha grape">
+            <div class="test">
+            
+              <h2 class="dope green">Graphic design</h2>
+              <p class="dg green left">
+                Great design makes you memorable. We deliver artwork that underscores your brand message and
+                captures potential clients’ attention.
+              </p>
+           </div>
+          </div>
+
+          <div class="beta grape">
+            <div class="test">
+              <h2 class="dope blue">Photography</h2>
+              <p class="dg blue right">
+               Increase your credibility by getting the most stunning, high-quality
+               photos that improve your business image.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div class="testimonials">
+        <h3 class="stand-out">Client testimonials</h3>
+         <div class="new">
+          <div class="reviews">
+            <img class="rounded" src="./images/image-emily.jpg" alt="emily" />
+            <h3 class="reviews-note">
+             We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </h3>
+            <h2 class="name">Emily R.</h2>
+            <p class="position">Marketing Director</p>
+         </div>
+         <div>
+            <img class="rounded" src="./images/image-thomas.jpg" alt="Thomas" />
+            <h3 class="reviews-note">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </h3>
+            <h2 class="name">Thomas S.</h2>
+            <p class="position">Chief Operating officer</p>
+          </div>  
+
+          <div>
+            <img class="rounded" src="./images/image-jennie.jpg" alt="jennie" />
+            <h3 class="reviews-note jennie">
+             Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </h3>
+            <h2 class="name">Jennie F.</h2>
+            <p class="position">Business Owner</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-area">
+        <div class="footer area-a">
+          <img class="foorimage-a" src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk-bottle" />
+          <img class="foorimage-b" src="./images/desktop/image-gallery-orange.jpg" alt="orange" />
+        </div>
+        <div class="footer area-b">
+          <img class="foorimage-a" src="./images/desktop/image-gallery-cone.jpg" alt="cone" />
+          <img class="foorimage-b" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" />
+        </div>
+      </div>
+      <div class="bar-bottom">
+        <h2 class="Sunnyside">sunnyside</h2>
+        <div class="buttom-bar">
+          <ul class="hero">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li></li>
+            <li><a href="#">Projects</a></li></li>
+          </ul>
+        </div>
+        <div class="contact-link">
+          <ul class="Contact">
+            <li><a href="#"><img src="./images/icon-facebook.svg"/></a></li>
+            <li><a href="#"><img src="./images/icon-instagram.svg"/></a></li>
+            <li><a href="#"><img src="./images/icon-twitter.svg"/></a></li></li>
+            <li><a href="#"><img src="./images/icon-pinterest.svg"/></a></li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./index.js" charset="utf-8"></script>
+  </body>
+</html>
